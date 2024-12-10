@@ -65,14 +65,18 @@ namespace Hospital.Forms.FormsSistemas
                     CB_BajasSolicitadas.Items.Add(a);
                 }
             }
-            foreach(IngSistemas i in h.listaSistemas)
+            if(formAdmin == null)
             {
-                CB_ListaPersonas.Items.Add(i);
-                if (i.BajaSolicitada == true)
+                foreach (IngSistemas i in h.listaSistemas)
                 {
-                    CB_BajasSolicitadas.Items.Add(i);
+                    CB_ListaPersonas.Items.Add(i);
+                    if (i.BajaSolicitada == true)
+                    {
+                        CB_BajasSolicitadas.Items.Add(i);
+                    }
                 }
             }
+            
             
             
             

@@ -16,6 +16,7 @@ namespace Hospital
     public partial class Form1 : Form
     {
         public Hosp h = new Hosp();
+        
 
         public IngSistemas Paco = new IngSistemas();
         
@@ -254,6 +255,11 @@ namespace Hospital
 
 
             }
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
